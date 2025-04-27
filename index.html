@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Spotify</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/img/Spotify-logo.webp" sizes="52x52" as="image">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="#"><img src="/assets/img/Spotify-logo.webp" alt="Spotify Logo" class="header__logo--img" aria-label="Inicio"></a>
+            </div>
+            <div class="header__search">
+                <input type="text" class="header__search--input" placeholder="¿Qué quieres escuchar hoy?">
+                <button class="header__search--btn">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+            <div class="header__btns">
+                <button class="spotify-btn">
+                    <span class="material-symbols-outlined">notifications</span>
+                </button>
+                <button class="spotify-btn">
+                    <span class="material-symbols-outlined">person</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="main__container">
+        <aside class="aside">
+            <h2 class="aside__title">Recomendaciones</h2>
+            <ul class="aside__list">
+                <li class="aside__item">Playlist 1</li>
+                <li class="aside__item">Playlist 2</li>
+                <li class="aside__item">Playlist 3</li>
+            </ul>
+        </aside>
+        <main class="main">
+            <h1 class="main__title">Bienvenido a Spotify</h1>
+            <p class="main__description">Disfruta de tu música favorita en cualquier momento y lugar.</p>
+        </main>
+    </div>
+</body>
+</html>
