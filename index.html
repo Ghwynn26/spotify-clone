@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reproductor de Spotify</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/assets/img/Spotify-logo.webp" sizes="52x52" as="image">
+    <link rel="icon" href="/assets/img/favicon-spotify-48.svg" sizes="52x52" as="image">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
@@ -34,9 +34,12 @@
         <aside class="aside">
             <h2 class="aside__title">Recomendaciones</h2>
             <ul class="aside__list">
+                <h3>Tus listas</h3>
                 <li class="aside__item">Playlist 1</li>
                 <li class="aside__item">Playlist 2</li>
                 <li class="aside__item">Playlist 3</li>
+                <li class="aside__item">Playlist 4</li>
+                <li class="aside__item">Playlist 5</li>
             </ul>
         </aside>
         <main class="main">
@@ -44,5 +47,46 @@
             <p class="main__description">Disfruta de tu música favorita en cualquier momento y lugar.</p>
         </main>
     </div>
+    <section class="player">
+        <div class="player__container">
+          <div class="player__track-info">
+            <div class="player__cover">
+                <img id="cover" src="" alt="Portada de la canción">
+            </div>
+            <div class="player__track--data">
+                <p id="track-title" class="player__track--title">Título de la canción</p>
+                <p id="track-artist" class="player__track--artist">Artista</p>
+            </div>            
+          </div>
+      
+          <div class="player__controls">
+            <div class="player__controls--buttons">
+              <button class="player__btn">
+                <span class="material-symbols-outlined">skip_previous</span>
+              </button>
+              <button class="player__btn">
+                <span class="material-symbols-outlined">play_arrow</span>
+              </button>
+              <button class="player__btn">
+                <span class="material-symbols-outlined">skip_next</span>
+              </button>
+            </div>
+      
+            <div class="player__controls--progress">
+              <div class="player__progress">
+                <input type="range" min="0" max="100" value="0" class="player__progress--slider">
+                <div class="player__progress--time">0:00</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="player__volume">
+            <span class="material-symbols-outlined">volume_up</span>
+            <input type="range" min="0" max="100" value="50" class="player__volume--slider"></div>
+          </div>
+        </div>
+      </section>
+      <audio id="audioPlayer" src="/assets/audio/Bad Bunny - Un Coco.mp3"></audio>
+      <script src="player.js"></script>
 </body>
 </html>
