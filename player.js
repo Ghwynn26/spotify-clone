@@ -26,7 +26,43 @@ const songs = [
         artist: "Bad Bunny",
         src: "assets/audio/Monaco.mp3",
         cover: "assets/img/monaco.jpg"        
-    }
+    },
+    {
+        title: "Ahora y Siempre",
+        artist: "Quevedo",
+        src: "assets/audio/ahora-y-siempre.mp3",
+        cover: "assets/img/ahora-y-siempre.avif"        
+    },
+    {
+        title: "La Última",
+        artist: "Quevedo",
+        src: "assets/audio/la-ultima.mp3",
+        cover: "assets/img/la-ultima.avif"        
+    },
+    {
+        title: "Barro",
+        artist: "Duki",
+        src: "assets/audio/barro.mp3",
+        cover: "assets/img/barro.avif"        
+    },
+    {
+        title: "Santo Grial",
+        artist: "Duki",
+        src: "assets/audio/santo-grial.mp3",
+        cover: "assets/img/santo-grial.avif"        
+    },
+    {
+        title: "A 200",
+        artist: "Rei",
+        src: "assets/audio/a-200.mp3",
+        cover: "assets/img/a-200.avif"        
+    },
+    {
+        title: "Un Montón",
+        artist: "Rei",
+        src: "assets/audio/un-monton.mp3",
+        cover: "assets/img/un-monton.avif"        
+    },
 ];
 
 let currentSongIndex = 0;
@@ -106,3 +142,11 @@ volumeSlider.addEventListener('input', setVolume);
 loadSong(songs[currentSongIndex]);
 
 audioPlayer.addEventListener('ended', nextSong);
+
+document.querySelectorAll('.main__content--item').forEach((item, index) => {
+    item.addEventListener('click', () => {
+        currentSongIndex = index;
+        loadSong(songs[index]);
+        playSong();
+    });
+});
