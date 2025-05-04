@@ -351,23 +351,53 @@ input[type="range"]::-moz-range-thumb {
 
 /* Media Queries */
 
-@media (max-width: 768px) {
-    .main__container {
-        flex-direction: column;
+@media (max-width: 804px) {
+    .header {
+        width: 125%;
     }
 
     .header__container {
-        flex-direction: column;
-        align-items: stretch;
+        justify-content: space-between;
+        gap: 20px;
     }
-
-    .header__btns {
-        justify-content: center;
-    }
-
+    
     .player__container {
-        flex-direction: column;
-        align-items: stretch;
+        height: 50px;
+        flex: 1 1 100%
+    }
+
+    .player__track-info {
+        flex: 0 1 50px;
+        justify-content: space-between;
+    }
+
+    .player__track--title {
+        font-size: 0.8rem;
+    }
+
+    .player__track--artist {
+        font-size: 0.6rem;
+    }
+
+    .player__controls {
+        flex: 0 0 50%;
+        justify-content: space-between;
+    }
+
+    .player__volume {
+        flex: 0 1 25dvw;
+    }
+}
+
+@media (max-width: 375px) {
+    .header {
+        width: 141%;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        width: 165%;
     }
 }
   
