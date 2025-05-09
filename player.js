@@ -63,6 +63,24 @@ const songs = [
         src: "assets/audio/un-monton.mp3",
         cover: "assets/img/un-monton.avif"        
     },
+    {
+        title: "Más Allá",
+        artist: "Callejeros",
+        src: "/assets/audio/mas-alla.mp3",
+        cover: "/assets/img/disco-escultura.webp"        
+    },
+    {
+        title: "Jugando",
+        artist: "Callejeros",
+        src: "/assets/audio/jugando.mp3",
+        cover: "/assets/img/sed.webp"        
+    },
+    {
+        title: "Creo",
+        artist: "Callejeros",
+        src: "/assets/audio/creo.mp3",
+        cover: "/assets/img/señales.webp"        
+    }
 ];
 
 let currentSongIndex = 0;
